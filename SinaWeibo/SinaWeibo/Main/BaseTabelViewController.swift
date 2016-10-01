@@ -36,6 +36,5 @@ class BaseTabelViewController: UITableViewController {
 extension BaseTabelViewController {
     func setupVisitorView() {
         view = visitorView
-        view.backgroundColor = UIColor.redColor()
     }
 }
