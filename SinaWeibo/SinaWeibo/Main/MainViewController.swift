@@ -10,26 +10,55 @@ import UIKit
 
 class MainViewController: UITabBarController {
 
+    private lazy var tabBarItemImges = [
+        "tabbar_home",
+        "tabbar_message_center",
+        "",
+        "tabbar_discover",
+        "tabbar_profile"
+    ]
+    
+    private lazy var composeBtn = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setupComposeBtn()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setupTabBar()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension MainViewController {
+    //设置发布按钮
+    private func setupComposeBtn() {
+        tabBar.addSubview(composeBtn)
+        composeBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: .Normal)
+        composeBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: .Selected)
+        composeBtn.setImage(UIImage(named: "tabbar_compose_icon_add"), forState: .Normal)
+        composeBtn.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), forState: .Selected)
+        composeBtn.sizeToFit()
+        composeBtn.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.height * 0.5)
     }
-    */
-
+    
+    //设置tabBar
+    private func setupTabBar() {
+        for i in 0..<tabBar.items!.count {
+            let item = tabBar.items![i]
+            if i == 2 {
+                item.enabled = false
+                continue
+            }
+            item.selectedImage = UIImage(named: tabBarItemImges[i] + "_highlighted")
+        }
+    }
 }

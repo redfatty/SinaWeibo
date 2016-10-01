@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Main View Controller-->
         <scene sceneID="yy1-5J-Fzz">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jy4-ye-t20" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jy4-ye-t20" customClass="MainViewController" customModule="SinaWeibo" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="DUt-M8-14L">
                         <autoresizingMask key="autoresizingMask"/>
