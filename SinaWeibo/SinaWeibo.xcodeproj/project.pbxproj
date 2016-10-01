@@ -15,6 +15,7 @@
 		CEEC5E581D9F443900DA8DF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E571D9F443900DA8DF3 /* HomeViewController.swift */; };
 		CEEC5E5A1D9F444C00DA8DF3 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E591D9F444C00DA8DF3 /* MessageViewController.swift */; };
 		CEEC5E5C1D9F445B00DA8DF3 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E5B1D9F445B00DA8DF3 /* DiscoverViewController.swift */; };
+		CEEC5E5F1D9F4B1B00DA8DF3 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = CEEC5E5E1D9F4B1B00DA8DF3 /* MainVCSettings.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		CEEC5E571D9F443900DA8DF3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CEEC5E591D9F444C00DA8DF3 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		CEEC5E5B1D9F445B00DA8DF3 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		CEEC5E5E1D9F4B1B00DA8DF3 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		CECE6D541D9EBB8D00C6DF41 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC5E5D1D9F4B1B00DA8DF3 /* Resource */,
 				CEEC5E551D9F440B00DA8DF3 /* MainViewController.swift */,
 			);
 			path = Main;
@@ -140,6 +143,14 @@
 			children = (
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		CEEC5E5D1D9F4B1B00DA8DF3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC5E5E1D9F4B1B00DA8DF3 /* MainVCSettings.json */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 			files = (
 				CECE6D3A1D9EB3CD00C6DF41 /* Assets.xcassets in Resources */,
 				CECE6D381D9EB3CD00C6DF41 /* Main.storyboard in Resources */,
+				CEEC5E5F1D9F4B1B00DA8DF3 /* MainVCSettings.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
