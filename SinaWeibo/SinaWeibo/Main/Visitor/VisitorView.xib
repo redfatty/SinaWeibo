@@ -23,7 +23,7 @@
                         <constraint firstAttribute="height" constant="430" id="RJc-qr-KWS"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_image_house" translatesAutoresizingMaskIntoConstraints="NO" id="xe9-ny-E97" userLabel="房子">
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_image_house" translatesAutoresizingMaskIntoConstraints="NO" id="xe9-ny-E97" userLabel="房子">
                     <rect key="frame" x="253" y="189" width="94" height="90"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="94" id="aa3-KT-hEN"/>
@@ -85,6 +85,11 @@
                 <constraint firstItem="w7L-Eo-uPJ" firstAttribute="top" secondItem="pwG-pk-5xG" secondAttribute="top" id="qjl-40-nel"/>
                 <constraint firstItem="xe9-ny-E97" firstAttribute="centerY" secondItem="3fJ-Rc-hvd" secondAttribute="centerY" constant="15" id="qyQ-rx-qg2"/>
             </constraints>
+            <connections>
+                <outlet property="iconView" destination="xe9-ny-E97" id="bbj-hR-lRu"/>
+                <outlet property="rotationView" destination="3fJ-Rc-hvd" id="XhB-DC-4Ls"/>
+                <outlet property="tipLabel" destination="0Jq-u1-hI8" id="rcE-qQ-nCl"/>
+            </connections>
         </view>
     </objects>
     <resources>
