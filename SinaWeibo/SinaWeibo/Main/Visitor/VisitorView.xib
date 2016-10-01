@@ -30,7 +30,7 @@
                         <constraint firstAttribute="height" constant="90" id="mRx-5G-DfR"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwG-pk-5xG">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwG-pk-5xG" userLabel="注册">
                     <rect key="frame" x="168" y="406" width="90" height="32"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="90" id="HZT-Yc-XsK"/>
@@ -87,6 +87,8 @@
             </constraints>
             <connections>
                 <outlet property="iconView" destination="xe9-ny-E97" id="bbj-hR-lRu"/>
+                <outlet property="loginBtn" destination="w7L-Eo-uPJ" id="8DR-Oe-e8I"/>
+                <outlet property="registerBtn" destination="pwG-pk-5xG" id="f9m-Gm-HZS"/>
                 <outlet property="rotationView" destination="3fJ-Rc-hvd" id="XhB-DC-4Ls"/>
                 <outlet property="tipLabel" destination="0Jq-u1-hI8" id="rcE-qQ-nCl"/>
             </connections>

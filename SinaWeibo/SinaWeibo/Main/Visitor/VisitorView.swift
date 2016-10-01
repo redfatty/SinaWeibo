@@ -13,6 +13,8 @@ class VisitorView: UIView {
     @IBOutlet weak var rotationView: UIImageView!
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var tipLabel: UILabel!
+    @IBOutlet weak var registerBtn: UIButton!
+    @IBOutlet weak var loginBtn: UIButton!
     
     class func loadNib() -> VisitorView {
         return NSBundle.mainBundle().loadNibNamed("VisitorView", owner: nil, options: nil).last as! VisitorView
@@ -38,5 +40,5 @@ class VisitorView: UIView {
     deinit {
        rotationView.layer.removeAnimationForKey("rotationAnim")
     }
-
 }
+
