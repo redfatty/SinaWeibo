@@ -39,11 +39,13 @@ class MainViewController: UITabBarController {
     }
 }
 
+//ui设置
 extension MainViewController {
     //设置发布按钮
     private func setupComposeBtn() {
         tabBar.addSubview(composeBtn)
         composeBtn.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.height * 0.5)
+        composeBtn.addTarget(self, action: "clickComposeBtn", forControlEvents: .TouchUpInside)
     }
     
     //设置tabBar
@@ -57,5 +59,13 @@ extension MainViewController {
 //            }
 //            item.selectedImage = UIImage(named: tabBarItemImges[i] + "_highlighted")
 //        }
+    }
+}
+
+
+//监听事件
+extension MainViewController {
+    @objc private func clickComposeBtn() {
+        print("点击发布")
     }
 }

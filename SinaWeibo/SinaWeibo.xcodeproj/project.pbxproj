@@ -23,6 +23,9 @@
 		CEEC5E6D1D9F64BF00DA8DF3 /* Pub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC5E6B1D9F64BF00DA8DF3 /* Pub.storyboard */; };
 		CEEC5E6F1D9F65B400DA8DF3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E6E1D9F65B400DA8DF3 /* ProfileViewController.swift */; };
 		CEEC5E731D9F90A200DA8DF3 /* UIButton+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E721D9F90A200DA8DF3 /* UIButton+Category.swift */; };
+		CEEC5E7A1D9F9E2900DA8DF3 /* BaseTabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E791D9F9E2900DA8DF3 /* BaseTabelViewController.swift */; };
+		CEEC5E7C1D9F9EBA00DA8DF3 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E7B1D9F9EBA00DA8DF3 /* VisitorView.swift */; };
+		CEEC5E7E1D9F9F6A00DA8DF3 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEC5E7D1D9F9F6A00DA8DF3 /* VisitorView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		CEEC5E6C1D9F64BF00DA8DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Pub.storyboard; sourceTree = "<group>"; };
 		CEEC5E6E1D9F65B400DA8DF3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CEEC5E721D9F90A200DA8DF3 /* UIButton+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Category.swift"; sourceTree = "<group>"; };
+		CEEC5E791D9F9E2900DA8DF3 /* BaseTabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabelViewController.swift; sourceTree = "<group>"; };
+		CEEC5E7B1D9F9EBA00DA8DF3 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		CEEC5E7D1D9F9F6A00DA8DF3 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,8 @@
 			children = (
 				CECE6D361D9EB3CD00C6DF41 /* Main.storyboard */,
 				CEEC5E551D9F440B00DA8DF3 /* MainViewController.swift */,
+				CEEC5E791D9F9E2900DA8DF3 /* BaseTabelViewController.swift */,
+				CEEC5E741D9F9C8900DA8DF3 /* Visitor */,
 				CEEC5E5D1D9F4B1B00DA8DF3 /* Resource */,
 			);
 			path = Main;
@@ -196,6 +204,15 @@
 				CEEC5E721D9F90A200DA8DF3 /* UIButton+Category.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		CEEC5E741D9F9C8900DA8DF3 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC5E7B1D9F9EBA00DA8DF3 /* VisitorView.swift */,
+				CEEC5E7D1D9F9F6A00DA8DF3 /* VisitorView.xib */,
+			);
+			path = Visitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +305,7 @@
 				CEEC5E631D9F647200DA8DF3 /* Home.storyboard in Resources */,
 				CEEC5E6A1D9F64B000DA8DF3 /* Profile.storyboard in Resources */,
 				CEEC5E681D9F64A100DA8DF3 /* Discover.storyboard in Resources */,
+				CEEC5E7E1D9F9F6A00DA8DF3 /* VisitorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +325,11 @@
 			files = (
 				CEEC5E731D9F90A200DA8DF3 /* UIButton+Category.swift in Sources */,
 				CEEC5E6F1D9F65B400DA8DF3 /* ProfileViewController.swift in Sources */,
+				CEEC5E7A1D9F9E2900DA8DF3 /* BaseTabelViewController.swift in Sources */,
 				CECE6D331D9EB3CD00C6DF41 /* AppDelegate.swift in Sources */,
 				CEEC5E561D9F440B00DA8DF3 /* MainViewController.swift in Sources */,
 				CEEC5E5A1D9F444C00DA8DF3 /* MessageViewController.swift in Sources */,
+				CEEC5E7C1D9F9EBA00DA8DF3 /* VisitorView.swift in Sources */,
 				CEEC5E581D9F443900DA8DF3 /* HomeViewController.swift in Sources */,
 				CEEC5E5C1D9F445B00DA8DF3 /* DiscoverViewController.swift in Sources */,
 			);
