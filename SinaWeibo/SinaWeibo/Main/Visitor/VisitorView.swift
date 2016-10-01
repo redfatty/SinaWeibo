@@ -30,7 +30,7 @@ class VisitorView: UIView {
         let rotationAnim = CABasicAnimation(keyPath: "transform.rotation.z")
         rotationAnim.fromValue = 0
         rotationAnim.toValue = 2 * M_PI
-        rotationAnim.repeatCount = MAXFLOAT
+        rotationAnim.repeatCount = MAXFLOAT//一直循环
         rotationAnim.duration = 5
         rotationAnim.removedOnCompletion = false//不让系统移除
         
