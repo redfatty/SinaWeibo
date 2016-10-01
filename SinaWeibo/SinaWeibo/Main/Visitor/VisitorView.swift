@@ -20,12 +20,14 @@ class VisitorView: UIView {
         return NSBundle.mainBundle().loadNibNamed("VisitorView", owner: nil, options: nil).last as! VisitorView
     }
     
+    //MARK: -设置信息
     func setupInfo(inconImg iconImg: UIImage?, tipTitle: String) {
         iconView.image = iconImg
         tipLabel.text = tipTitle
         rotationView.hidden = true
     }
     
+    //MARK: -添加旋转动画
     func addRotationAnimation() {
         let rotationAnim = CABasicAnimation(keyPath: "transform.rotation.z")
         rotationAnim.fromValue = 0

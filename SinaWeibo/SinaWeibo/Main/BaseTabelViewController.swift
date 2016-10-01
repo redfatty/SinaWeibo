@@ -10,6 +10,7 @@ import UIKit
 
 class BaseTabelViewController: UITableViewController {
 
+    //MARK: - 属性定义:
     //标记是否已经登录
     var isLogin = false
     //访客视图
@@ -23,6 +24,8 @@ class BaseTabelViewController: UITableViewController {
         super.viewDidLoad()
         
         setupNavItems()
+        
+    
     }
 
 }
