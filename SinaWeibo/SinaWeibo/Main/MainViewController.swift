@@ -18,7 +18,7 @@ class MainViewController: UITabBarController {
         "tabbar_profile"
     ]
     
-    private lazy var composeBtn = UIButton()
+    private lazy var composeBtn = UIButton(imgName: "tabbar_compose_icon_add", bgImgName: "tabbar_compose_button")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +29,7 @@ class MainViewController: UITabBarController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        //如果要在代码中设置的话, 一定要在viewWillAppear中设置, 不能在viewDidLoad设置
         setupTabBar()
     }
 
@@ -42,23 +43,19 @@ extension MainViewController {
     //设置发布按钮
     private func setupComposeBtn() {
         tabBar.addSubview(composeBtn)
-        composeBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: .Normal)
-        composeBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: .Selected)
-        composeBtn.setImage(UIImage(named: "tabbar_compose_icon_add"), forState: .Normal)
-        composeBtn.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), forState: .Selected)
-        composeBtn.sizeToFit()
         composeBtn.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.height * 0.5)
     }
     
     //设置tabBar
     private func setupTabBar() {
-        for i in 0..<tabBar.items!.count {
-            let item = tabBar.items![i]
-            if i == 2 {
-                item.enabled = false
-                continue
-            }
-            item.selectedImage = UIImage(named: tabBarItemImges[i] + "_highlighted")
-        }
+        //已经在storyboard中设置好了
+//        for i in 0..<tabBar.items!.count {
+//            let item = tabBar.items![i]
+//            if i == 2 {
+//                item.enabled = false
+//                continue
+//            }
+//            item.selectedImage = UIImage(named: tabBarItemImges[i] + "_highlighted")
+//        }
     }
 }

@@ -22,6 +22,7 @@
 		CEEC5E6A1D9F64B000DA8DF3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC5E691D9F64B000DA8DF3 /* Profile.storyboard */; };
 		CEEC5E6D1D9F64BF00DA8DF3 /* Pub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC5E6B1D9F64BF00DA8DF3 /* Pub.storyboard */; };
 		CEEC5E6F1D9F65B400DA8DF3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E6E1D9F65B400DA8DF3 /* ProfileViewController.swift */; };
+		CEEC5E731D9F90A200DA8DF3 /* UIButton+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E721D9F90A200DA8DF3 /* UIButton+Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		CEEC5E691D9F64B000DA8DF3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = SinaWeibo/Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		CEEC5E6C1D9F64BF00DA8DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Pub.storyboard; sourceTree = "<group>"; };
 		CEEC5E6E1D9F65B400DA8DF3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CEEC5E721D9F90A200DA8DF3 /* UIButton+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Category.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				CECE6D321D9EB3CD00C6DF41 /* AppDelegate.swift */,
 				CECE6D391D9EB3CD00C6DF41 /* Assets.xcassets */,
 				CECE6D3E1D9EB3CD00C6DF41 /* Info.plist */,
+				CEEC5E701D9F907E00DA8DF3 /* Tool */,
 				CECE6D541D9EBB8D00C6DF41 /* Main */,
 				CECE6D531D9EBB8D00C6DF41 /* Home */,
 				CECE6D551D9EBB8D00C6DF41 /* Message */,
@@ -179,6 +182,22 @@
 			path = Pub;
 			sourceTree = "<group>";
 		};
+		CEEC5E701D9F907E00DA8DF3 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC5E711D9F907E00DA8DF3 /* Category */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		CEEC5E711D9F907E00DA8DF3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC5E721D9F90A200DA8DF3 /* UIButton+Category.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,6 +248,7 @@
 				TargetAttributes = {
 					CECE6D2E1D9EB3CD00C6DF41 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7KE34WL2XD;
 					};
 					CECE6D421D9EB3CD00C6DF41 = {
 						CreatedOnToolsVersion = 7.2;
@@ -285,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEC5E731D9F90A200DA8DF3 /* UIButton+Category.swift in Sources */,
 				CEEC5E6F1D9F65B400DA8DF3 /* ProfileViewController.swift in Sources */,
 				CECE6D331D9EB3CD00C6DF41 /* AppDelegate.swift in Sources */,
 				CEEC5E561D9F440B00DA8DF3 /* MainViewController.swift in Sources */,
@@ -440,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SinaWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hj.com.SinaWeibo;
@@ -453,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SinaWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hj.com.SinaWeibo;

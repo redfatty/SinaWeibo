@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="mYH-P6-Eqs"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="" id="mYH-P6-Eqs"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Lg-4W-3vx" userLabel="First Responder" sceneMemberID="firstResponder"/>

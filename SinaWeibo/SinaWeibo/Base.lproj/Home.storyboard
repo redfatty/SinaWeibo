@@ -27,7 +27,7 @@
         <scene sceneID="Hc7-Af-fJj">
             <objects>
                 <navigationController id="7lN-dD-Yaw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="tabbar_home" id="wL8-H6-4Y4"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="tabbar_home" selectedImage="tabbar_home_highlighted" id="wL8-H6-4Y4"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sj8-uw-TiS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -44,5 +44,6 @@
     </scenes>
     <resources>
         <image name="tabbar_home" width="30" height="30"/>
+        <image name="tabbar_home_highlighted" width="30" height="30"/>
     </resources>
 </document>
