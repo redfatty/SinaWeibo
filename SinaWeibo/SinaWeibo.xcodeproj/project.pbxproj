@@ -16,6 +16,12 @@
 		CEEC5E5A1D9F444C00DA8DF3 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E591D9F444C00DA8DF3 /* MessageViewController.swift */; };
 		CEEC5E5C1D9F445B00DA8DF3 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E5B1D9F445B00DA8DF3 /* DiscoverViewController.swift */; };
 		CEEC5E5F1D9F4B1B00DA8DF3 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = CEEC5E5E1D9F4B1B00DA8DF3 /* MainVCSettings.json */; };
+		CEEC5E631D9F647200DA8DF3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC5E611D9F647200DA8DF3 /* Home.storyboard */; };
+		CEEC5E651D9F648600DA8DF3 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC5E641D9F648600DA8DF3 /* Message.storyboard */; };
+		CEEC5E681D9F64A100DA8DF3 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC5E661D9F64A100DA8DF3 /* Discover.storyboard */; };
+		CEEC5E6A1D9F64B000DA8DF3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC5E691D9F64B000DA8DF3 /* Profile.storyboard */; };
+		CEEC5E6D1D9F64BF00DA8DF3 /* Pub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEC5E6B1D9F64BF00DA8DF3 /* Pub.storyboard */; };
+		CEEC5E6F1D9F65B400DA8DF3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E6E1D9F65B400DA8DF3 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,12 @@
 		CEEC5E591D9F444C00DA8DF3 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		CEEC5E5B1D9F445B00DA8DF3 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		CEEC5E5E1D9F4B1B00DA8DF3 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		CEEC5E621D9F647200DA8DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		CEEC5E641D9F648600DA8DF3 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = SinaWeibo/Message.storyboard; sourceTree = SOURCE_ROOT; };
+		CEEC5E671D9F64A100DA8DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
+		CEEC5E691D9F64B000DA8DF3 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = SinaWeibo/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		CEEC5E6C1D9F64BF00DA8DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Pub.storyboard; sourceTree = "<group>"; };
+		CEEC5E6E1D9F65B400DA8DF3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,7 @@
 				CECE6D541D9EBB8D00C6DF41 /* Main */,
 				CECE6D531D9EBB8D00C6DF41 /* Home */,
 				CECE6D551D9EBB8D00C6DF41 /* Message */,
+				CEEC5E601D9F63A900DA8DF3 /* Pub */,
 				CECE6D521D9EBB8D00C6DF41 /* Discover */,
 				CECE6D561D9EBB8D00C6DF41 /* Profile */,
 			);
@@ -108,6 +121,7 @@
 		CECE6D521D9EBB8D00C6DF41 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC5E661D9F64A100DA8DF3 /* Discover.storyboard */,
 				CEEC5E5B1D9F445B00DA8DF3 /* DiscoverViewController.swift */,
 			);
 			path = Discover;
@@ -116,6 +130,7 @@
 		CECE6D531D9EBB8D00C6DF41 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC5E611D9F647200DA8DF3 /* Home.storyboard */,
 				CEEC5E571D9F443900DA8DF3 /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -133,6 +148,7 @@
 		CECE6D551D9EBB8D00C6DF41 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC5E641D9F648600DA8DF3 /* Message.storyboard */,
 				CEEC5E591D9F444C00DA8DF3 /* MessageViewController.swift */,
 			);
 			path = Message;
@@ -141,6 +157,8 @@
 		CECE6D561D9EBB8D00C6DF41 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC5E691D9F64B000DA8DF3 /* Profile.storyboard */,
+				CEEC5E6E1D9F65B400DA8DF3 /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -151,6 +169,14 @@
 				CEEC5E5E1D9F4B1B00DA8DF3 /* MainVCSettings.json */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		CEEC5E601D9F63A900DA8DF3 /* Pub */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC5E6B1D9F64BF00DA8DF3 /* Pub.storyboard */,
+			);
+			path = Pub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +262,12 @@
 			files = (
 				CECE6D3A1D9EB3CD00C6DF41 /* Assets.xcassets in Resources */,
 				CECE6D381D9EB3CD00C6DF41 /* Main.storyboard in Resources */,
+				CEEC5E651D9F648600DA8DF3 /* Message.storyboard in Resources */,
 				CEEC5E5F1D9F4B1B00DA8DF3 /* MainVCSettings.json in Resources */,
+				CEEC5E6D1D9F64BF00DA8DF3 /* Pub.storyboard in Resources */,
+				CEEC5E631D9F647200DA8DF3 /* Home.storyboard in Resources */,
+				CEEC5E6A1D9F64B000DA8DF3 /* Profile.storyboard in Resources */,
+				CEEC5E681D9F64A100DA8DF3 /* Discover.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEC5E6F1D9F65B400DA8DF3 /* ProfileViewController.swift in Sources */,
 				CECE6D331D9EB3CD00C6DF41 /* AppDelegate.swift in Sources */,
 				CEEC5E561D9F440B00DA8DF3 /* MainViewController.swift in Sources */,
 				CEEC5E5A1D9F444C00DA8DF3 /* MessageViewController.swift in Sources */,
@@ -287,6 +319,33 @@
 				CECE6D371D9EB3CD00C6DF41 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEEC5E611D9F647200DA8DF3 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEC5E621D9F647200DA8DF3 /* Base */,
+			);
+			name = Home.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CEEC5E661D9F64A100DA8DF3 /* Discover.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEC5E671D9F64A100DA8DF3 /* Base */,
+			);
+			name = Discover.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CEEC5E6B1D9F64BF00DA8DF3 /* Pub.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEEC5E6C1D9F64BF00DA8DF3 /* Base */,
+			);
+			name = Pub.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
