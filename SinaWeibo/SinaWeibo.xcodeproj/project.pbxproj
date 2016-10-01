@@ -11,6 +11,10 @@
 		CECE6D381D9EB3CD00C6DF41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECE6D361D9EB3CD00C6DF41 /* Main.storyboard */; };
 		CECE6D3A1D9EB3CD00C6DF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECE6D391D9EB3CD00C6DF41 /* Assets.xcassets */; };
 		CECE6D481D9EB3CD00C6DF41 /* SinaWeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE6D471D9EB3CD00C6DF41 /* SinaWeiboUITests.swift */; };
+		CEEC5E561D9F440B00DA8DF3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E551D9F440B00DA8DF3 /* MainViewController.swift */; };
+		CEEC5E581D9F443900DA8DF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E571D9F443900DA8DF3 /* HomeViewController.swift */; };
+		CEEC5E5A1D9F444C00DA8DF3 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E591D9F444C00DA8DF3 /* MessageViewController.swift */; };
+		CEEC5E5C1D9F445B00DA8DF3 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC5E5B1D9F445B00DA8DF3 /* DiscoverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,10 @@
 		CECE6D431D9EB3CD00C6DF41 /* SinaWeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinaWeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECE6D471D9EB3CD00C6DF41 /* SinaWeiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinaWeiboUITests.swift; sourceTree = "<group>"; };
 		CECE6D491D9EB3CD00C6DF41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEC5E551D9F440B00DA8DF3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CEEC5E571D9F443900DA8DF3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CEEC5E591D9F444C00DA8DF3 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		CEEC5E5B1D9F445B00DA8DF3 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,7 @@
 		CECE6D521D9EBB8D00C6DF41 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC5E5B1D9F445B00DA8DF3 /* DiscoverViewController.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -105,6 +114,7 @@
 		CECE6D531D9EBB8D00C6DF41 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC5E571D9F443900DA8DF3 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -112,6 +122,7 @@
 		CECE6D541D9EBB8D00C6DF41 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC5E551D9F440B00DA8DF3 /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -119,6 +130,7 @@
 		CECE6D551D9EBB8D00C6DF41 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC5E591D9F444C00DA8DF3 /* MessageViewController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -231,6 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECE6D331D9EB3CD00C6DF41 /* AppDelegate.swift in Sources */,
+				CEEC5E561D9F440B00DA8DF3 /* MainViewController.swift in Sources */,
+				CEEC5E5A1D9F444C00DA8DF3 /* MessageViewController.swift in Sources */,
+				CEEC5E581D9F443900DA8DF3 /* HomeViewController.swift in Sources */,
+				CEEC5E5C1D9F445B00DA8DF3 /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +432,7 @@
 				CECE6D4E1D9EB3CD00C6DF41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CECE6D4F1D9EB3CD00C6DF41 /* Build configuration list for PBXNativeTarget "SinaWeiboUITests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +441,7 @@
 				CECE6D511D9EB3CD00C6DF41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
