@@ -12,7 +12,7 @@ class BaseTabelViewController: UITableViewController {
 
     //MARK: - 属性定义:
     //标记是否已经登录
-    var isLogin = false
+    var isLogin = !false
     //访客视图
     lazy var visitorView = VisitorView.loadNib()
     
@@ -24,8 +24,6 @@ class BaseTabelViewController: UITableViewController {
         super.viewDidLoad()
         
         setupNavItems()
-        
-    
     }
 
 }
@@ -33,7 +31,7 @@ class BaseTabelViewController: UITableViewController {
 //MARK:- UI设置
 extension BaseTabelViewController {
     //设置访客视图
-    func setupVisitorView() {
+    private func setupVisitorView() {
         //监听访客视图中的按钮点击
         visitorView.registerBtn.addTarget(self, action: "clickRegisterBtn", forControlEvents: .TouchUpInside)
         visitorView.loginBtn.addTarget(self, action: "clickLoginBtn", forControlEvents: .TouchUpInside)
@@ -41,7 +39,7 @@ extension BaseTabelViewController {
     }
     
     //设置导航栏item
-    func setupNavItems() {
+    private func setupNavItems() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .Plain, target: self, action: "clickRegisterBtn")
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .Plain, target: self, action: "clickLoginBtn")
     }

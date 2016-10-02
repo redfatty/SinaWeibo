@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE52E7381DA09F9800D474D1 /* TitleArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52E7371DA09F9800D474D1 /* TitleArrowButton.swift */; };
 		CECE6D331D9EB3CD00C6DF41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE6D321D9EB3CD00C6DF41 /* AppDelegate.swift */; };
 		CECE6D381D9EB3CD00C6DF41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECE6D361D9EB3CD00C6DF41 /* Main.storyboard */; };
 		CECE6D3A1D9EB3CD00C6DF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECE6D391D9EB3CD00C6DF41 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE52E7371DA09F9800D474D1 /* TitleArrowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleArrowButton.swift; path = Category/TitleArrowButton.swift; sourceTree = "<group>"; };
 		CECE6D2F1D9EB3CD00C6DF41 /* SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECE6D321D9EB3CD00C6DF41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECE6D371D9EB3CD00C6DF41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		CEEC5E701D9F907E00DA8DF3 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				CE52E7371DA09F9800D474D1 /* TitleArrowButton.swift */,
 				CEEC5E711D9F907E00DA8DF3 /* Category */,
 			);
 			path = Tool;
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEC5E731D9F90A200DA8DF3 /* UIButton+Category.swift in Sources */,
+				CE52E7381DA09F9800D474D1 /* TitleArrowButton.swift in Sources */,
 				CEEC5E6F1D9F65B400DA8DF3 /* ProfileViewController.swift in Sources */,
 				CEEC5E7A1D9F9E2900DA8DF3 /* BaseTabelViewController.swift in Sources */,
 				CECE6D331D9EB3CD00C6DF41 /* AppDelegate.swift in Sources */,

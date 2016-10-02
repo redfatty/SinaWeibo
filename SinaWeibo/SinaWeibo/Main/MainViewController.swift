@@ -10,6 +10,7 @@ import UIKit
 
 class MainViewController: UITabBarController {
 
+    //MARK: - 属性定义:
     private lazy var tabBarItemImges = [
         "tabbar_home",
         "tabbar_message_center",
