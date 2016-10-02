@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CE52E7381DA09F9800D474D1 /* TitleArrowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52E7371DA09F9800D474D1 /* TitleArrowButton.swift */; };
+		CE52E73C1DA1026100D474D1 /* PopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52E73A1DA1026100D474D1 /* PopViewController.swift */; };
+		CE52E73D1DA1026100D474D1 /* PopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE52E73B1DA1026100D474D1 /* PopViewController.xib */; };
+		CE52E7411DA1041B00D474D1 /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52E7401DA1041B00D474D1 /* PopAnimator.swift */; };
+		CE52E7431DA1069100D474D1 /* PopPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52E7421DA1069100D474D1 /* PopPresentationController.swift */; };
 		CECE6D331D9EB3CD00C6DF41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE6D321D9EB3CD00C6DF41 /* AppDelegate.swift */; };
 		CECE6D381D9EB3CD00C6DF41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECE6D361D9EB3CD00C6DF41 /* Main.storyboard */; };
 		CECE6D3A1D9EB3CD00C6DF41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECE6D391D9EB3CD00C6DF41 /* Assets.xcassets */; };
@@ -42,6 +46,10 @@
 
 /* Begin PBXFileReference section */
 		CE52E7371DA09F9800D474D1 /* TitleArrowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleArrowButton.swift; path = Category/TitleArrowButton.swift; sourceTree = "<group>"; };
+		CE52E73A1DA1026100D474D1 /* PopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopViewController.swift; sourceTree = "<group>"; };
+		CE52E73B1DA1026100D474D1 /* PopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopViewController.xib; sourceTree = "<group>"; };
+		CE52E7401DA1041B00D474D1 /* PopAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
+		CE52E7421DA1069100D474D1 /* PopPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopPresentationController.swift; sourceTree = "<group>"; };
 		CECE6D2F1D9EB3CD00C6DF41 /* SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECE6D321D9EB3CD00C6DF41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECE6D371D9EB3CD00C6DF41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +94,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE52E7391DA1023E00D474D1 /* Pop */ = {
+			isa = PBXGroup;
+			children = (
+				CE52E73A1DA1026100D474D1 /* PopViewController.swift */,
+				CE52E73B1DA1026100D474D1 /* PopViewController.xib */,
+				CE52E7401DA1041B00D474D1 /* PopAnimator.swift */,
+				CE52E7421DA1069100D474D1 /* PopPresentationController.swift */,
+			);
+			path = Pop;
+			sourceTree = "<group>";
+		};
 		CECE6D261D9EB3CD00C6DF41 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +163,7 @@
 			children = (
 				CEEC5E611D9F647200DA8DF3 /* Home.storyboard */,
 				CEEC5E571D9F443900DA8DF3 /* HomeViewController.swift */,
+				CE52E7391DA1023E00D474D1 /* Pop */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -311,6 +331,7 @@
 				CEEC5E631D9F647200DA8DF3 /* Home.storyboard in Resources */,
 				CEEC5E6A1D9F64B000DA8DF3 /* Profile.storyboard in Resources */,
 				CEEC5E681D9F64A100DA8DF3 /* Discover.storyboard in Resources */,
+				CE52E73D1DA1026100D474D1 /* PopViewController.xib in Resources */,
 				CEEC5E7E1D9F9F6A00DA8DF3 /* VisitorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +350,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE52E7411DA1041B00D474D1 /* PopAnimator.swift in Sources */,
+				CE52E7431DA1069100D474D1 /* PopPresentationController.swift in Sources */,
 				CEEC5E731D9F90A200DA8DF3 /* UIButton+Category.swift in Sources */,
 				CE52E7381DA09F9800D474D1 /* TitleArrowButton.swift in Sources */,
 				CEEC5E6F1D9F65B400DA8DF3 /* ProfileViewController.swift in Sources */,
@@ -337,6 +360,7 @@
 				CEEC5E561D9F440B00DA8DF3 /* MainViewController.swift in Sources */,
 				CEEC5E5A1D9F444C00DA8DF3 /* MessageViewController.swift in Sources */,
 				CEEC5E7C1D9F9EBA00DA8DF3 /* VisitorView.swift in Sources */,
+				CE52E73C1DA1026100D474D1 /* PopViewController.swift in Sources */,
 				CEEC5E581D9F443900DA8DF3 /* HomeViewController.swift in Sources */,
 				CEEC5E821DA0107C00DA8DF3 /* UIBarButtonItem+Category.swift in Sources */,
 				CEEC5E5C1D9F445B00DA8DF3 /* DiscoverViewController.swift in Sources */,

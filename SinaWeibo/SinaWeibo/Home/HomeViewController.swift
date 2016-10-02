@@ -12,6 +12,14 @@ class HomeViewController: BaseTabelViewController {
     
     //MARK:- 属性定义:
     private lazy var titleBtn: TitleArrowButton = TitleArrowButton()
+    private lazy var popAnimator: PopAnimator = {
+        let animator = PopAnimator()
+        animator.presentedFrame = CGRect(x: 100, y:64, width: 200, height: 200)
+        animator.popCompletion = {[weak self](isPresent: Bool) in
+            self!.titleBtn.selected = isPresent
+        }
+        return animator
+    }()
 
     //MARK:- 系统回调:
     override func viewDidLoad() {
@@ -47,9 +55,17 @@ extension HomeViewController {
     //MARK:- 按钮点击事件
     //MARK:-点击导航栏标题
     @objc private func clickNavTitleBtn(btn: TitleArrowButton) {
-        btn.selected = !btn.selected
-        //弹出
-        let vc = UIViewController()
+        
+        PopViewController.presentFromViewController(self, presentFrame: CGRect(x: 0, y: 64, width: 200, height: 200)) {[weak self] (isPresent: Bool) -> () in
+            
+        }
+        
+//        btn.selected = !btn.selected
+//        //弹出
+//        let popVC = PopViewController()
+//        popVC.modalPresentationStyle = .Custom
+//        popVC.transitioningDelegate = popAnimator
+//        presentViewController(popVC, animated: true, completion: nil)
     }
 }
 
